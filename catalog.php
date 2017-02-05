@@ -31,7 +31,7 @@ include ("inc/header.php"); ?>
                 <?php
                 $categories = array_category($catalog, $section);
                 foreach ($categories as $id => $item) {
-                    echo get_item_html($id, $catalog[$item]);
+                    echo get_item_html($item, $catalog[$item]);
                 }
                 ?>
             </ul>
